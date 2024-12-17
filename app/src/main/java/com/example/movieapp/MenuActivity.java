@@ -24,6 +24,13 @@ Button b1,b2,b3,b4;
         b3=(Button) findViewById(R.id.view);
         b4=(Button)findViewById(R.id.ex);
 
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ob=new Intent(getApplicationContext(), ViewActivity.class);
+                startActivity(ob);
+            }
+        });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
